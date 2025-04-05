@@ -6,4 +6,5 @@ Heroku variable for `PORT` and `DATABASE_URL` properly.
 
 The deployment will be made with a single free dyno and a free Postgres database attached.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Aashuvyas/keycloack-heroku)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Aashuvyas/keycloack-heroku)
+
