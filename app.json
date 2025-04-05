@@ -9,7 +9,7 @@
         "heroku"
     ],
     "stack": "container",
-    "repository": "https://github.com/ThomasMboto/keycloack-heroku-template",
+    "repository": "https://github.com/Aashuvyas/keycloack-heroku",
     "logo": "https://www.keycloak.org/resources/images/keycloak_logo_480x108.png",
     "success_url": "/",
     "env": {
@@ -34,7 +34,7 @@
     },
     "addons": [
         {
-            "plan": "heroku-postgresql:hobby-dev"
+            "plan": "heroku-postgresql:essential-0"
         }
     ]
 }
