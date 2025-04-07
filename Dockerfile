@@ -5,4 +5,4 @@ FROM quay.io/keycloak/keycloak:24.0.3
  RUN /opt/keycloak/bin/kc.sh build
 
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev", "--hostname-strict=false", "--hostname-strict-https=false"]
-CMD ["--http-port=8080"]
+CMD ["--http-port=${PORT}"]
