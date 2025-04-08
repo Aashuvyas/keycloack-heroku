@@ -7,5 +7,5 @@ COPY com.weare5stones.keycloak.authenticators-emailtotp-2.1.0.jar /opt/keycloak/
 
  RUN /opt/keycloak/bin/kc.sh build
 
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--hostname-strict=false","--hostname-strict-https=false","--proxy=edge","--spi-login-flow-binding-always-use-default=true"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--hostname-strict=false","--hostname-strict-https=false","--proxy=edge"]
 CMD ["--http-port=${PORT}"]
