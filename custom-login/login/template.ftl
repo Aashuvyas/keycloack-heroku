@@ -1,6 +1,6 @@
 <#-- themes/your-theme/login/template.ftl -->
 
-<#macro registrationLayout displayInfo=false displayMessage=true; section>
+<#macro registrationLayout displayInfo=false, displayMessage=true>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,9 +22,8 @@
         </#if>
 
         <#-- Main content section -->
-        <div class="kc-content">
-            <#nested "form">
-        </div>
+        <#-- Assuming "form" is a template or fragment, use <#include> -->
+        <#include "form.ftl" />
 
         <div class="kc-footer">
             <p>Powered by Keycloak</p>
