@@ -5,8 +5,9 @@
     <div id="kc-form-wrapper">
         <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
             <div class="${properties.kcFormGroupClass!}">
-                <label for="username" class="${properties.kcLabelClass!}">${msg("username")}</label>
-                <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" autofocus autocomplete="off"/>
+                <label for="username" class="${properties.kcLabelClass!}">Email</label>
+                <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="email" autofocus autocomplete="off"/>
+
             </div>
 
             <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
