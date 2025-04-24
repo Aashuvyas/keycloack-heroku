@@ -2,6 +2,7 @@ FROM quay.io/keycloak/keycloak:24.0.3
 
 RUN mkdir -p /opt/keycloak/providers
 COPY com.weare5stones.keycloak.authenticators-emailtotp-2.1.0.jar /opt/keycloak/providers/
+COPY keycloak-2fa-email-authenticator-0.3.0-KC21.1.0.jar /opt/keycloak/providers/
 COPY custom-login/ /opt/keycloak/themes/custom-login/
  
  COPY docker-entrypoint.sh /opt/jboss/tools
