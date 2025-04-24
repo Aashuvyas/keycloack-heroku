@@ -1,4 +1,4 @@
-FROM quay.io/keycloak/keycloak:26.2.0
+FROM quay.io/keycloak/keycloak:24.0.3
 
 RUN mkdir -p /opt/keycloak/providers
 COPY com.weare5stones.keycloak.authenticators-emailtotp-2.1.0.jar /opt/keycloak/providers/
